@@ -3,55 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Year Countdown</title>
+    <title>NYE 2025 Countdown</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="menu-btn">
-        <div class="menu-btn__burger"></div>
-    </div>
-    
-    <nav class="nav">
-        <ul class="nav-list">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+    <nav class="navbar">
+        <div class="logo">NYE 2025</div>
+        <div class="burger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#countdown">Countdown</a></li>
+            <li><a href="#celebrations">Celebrations</a></li>
+            <li><a href="#upcoming">Upcoming</a></li>
         </ul>
     </nav>
 
-    <main class="container">
-        <div class="countdown-wrapper">
-            <h1 class="title">New Year Countdown</h1>
-            <div class="countdown">
-                <div class="countdown-item">
-                    <span class="days">00</span>
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Welcome 2025</h1>
+            <div class="countdown-container">
+                <div class="countdown-box">
+                    <span id="days">00</span>
                     <span class="label">Days</span>
                 </div>
-                <div class="countdown-item">
-                    <span class="hours">00</span>
+                <div class="countdown-box">
+                    <span id="hours">00</span>
                     <span class="label">Hours</span>
                 </div>
-                <div class="countdown-item">
-                    <span class="minutes">00</span>
+                <div class="countdown-box">
+                    <span id="minutes">00</span>
                     <span class="label">Minutes</span>
                 </div>
-                <div class="countdown-item">
-                    <span class="seconds">00</span>
+                <div class="countdown-box">
+                    <span id="seconds">00</span>
                     <span class="label">Seconds</span>
                 </div>
             </div>
         </div>
-        
-        <div class="celebration" style="display: none;">
-            <h2>Happy New Year!</h2>
+        <div class="celebration-effects">
+            <canvas id="fireworks"></canvas>
+            <div id="confetti"></div>
         </div>
-    </main>
+    </section>
 
-    <canvas id="fireworks"></canvas>
-    <div id="confetti"></div>
+    <section id="celebrations">
+        <h2>New Year Around the World</h2>
+        <div class="celebration-grid">
+            <div class="celebration-card">
+                <h3>New Zealand</h3>
+                <div class="video-container">
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/orFMMXN84bg" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <div class="celebration-card">
+                <h3>Australia</h3>
+                <div class="video-container">
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/3rcw01QqUS8" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvas-confetti/1.4.0/confetti.browser.min.js"></script>
+<!-- Previous HTML remains same until the upcoming section -->
+<section id="upcoming">
+    <h2>Upcoming Celebrations</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="time">12:00 AM GMT+12</div>
+            <div class="event">Kiribati (Line Islands)</div>
+            <div class="details">First region to celebrate New Year</div>
+        </div>
+        <div class="timeline-item">
+            <div class="time">12:00 AM GMT+11</div>
+            <div class="event">Fiji</div>
+            <div class="details">Island nation fireworks and celebrations</div>
+        </div>
+        <div class="timeline-item">
+            <div class="time">12:00 AM GMT+10</div>
+            <div class="event">Sydney Harbour Fireworks</div>
+            <div class="details">Iconic Opera House & Harbour Bridge display</div>
+        </div>
+        <div class="timeline-item">
+            <div class="time">12:00 AM GMT+9</div>
+            <div class="event">Tokyo Shibuya Crossing Countdown</div>
+            <div class="details">Vibrant citywide celebration</div>
+        </div>
+        <div class="timeline-item">
+            <div class="time">12:00 AM GMT+8</div>
+            <div class="event">Beijing Temple of Heaven</div>
+            <div class="details">Cultural celebrations and fireworks</div>
+        </div>
+        <div class="timeline-item">
+            <div class="time">12:00 AM GMT+7</div>
+            <div class="event">Bangkok Grand Countdown at ICONSIAM</div>
+            <div class="details">Spectacular riverside fireworks display</div>
+        </div>
+        <div class="timeline-item">
+            <div class="time">12:00 AM GMT+5:30</div>
+            <div class="event">India Gateway of India Fireworks</div>
+            <div class="details">Nationwide celebrations with cultural events</div>
+        </div>
+        <div class="timeline-item">
+            <div class="time">12:00 AM GMT+6</div>
+            <div class="event">Dhaka New Year Festivities</div>
+            <div class="details">Celebration with cultural events and fireworks</div>
+        </div>
+        <div class="timeline-item">
+            <div class="time">12:00 AM GMT+5</div>
+            <div class="event">Karachi Clifton Beach Fireworks</div>
+            <div class="details">Beachfront celebrations</div>
+        </div>
+        <div class="timeline-item">
+            <div class="time">12:00 AM GMT+4</div>
+            <div class="event">Dubai Burj Khalifa Show</div>
+            <div class="details">World's tallest building light show</div>
+        </div>
+        <div class="timeline-item">
+            <div class="time">12:00 AM GMT+3</div>
+            <div class="event">Moscow Red Square Celebration</div>
+            <div class="details">Historic celebration with fireworks</div>
+        </div>
+        <div class="timeline-item">
+            <div class="time">12:00 AM GMT+2</div>
+            <div class="event">Cairo Nile River Fireworks</div>
+            <div class="details">Celebration along the Nile</div>
+        </div>
+        <div class="timeline-item">
+            <div class="time">12:00 AM GMT+1</div>
+            <div class="event">Paris Champs-Élysées</div>
+            <div class="details">Eiffel Tower light show spectacular</div>
+        </div>
+        <div class="timeline-item">
+            <div class="time">12:00 AM GMT</div>
+            <div class="event">London Eye Fireworks</div>
+            <div class="details">Thames riverside celebration</div>
+        </div>
+        <div class="timeline-item">
+            <div class="time">12:00 AM GMT-1</div>
+            <div class="event">Cape Verde Fireworks</div>
+            <div class="details">Island celebrations</div>
+        </div>
+        <div class="timeline-item">
+            <div class="time">12:00 AM GMT-3</div>
+            <div class="event">Rio de Janeiro Copacabana Beach</div>
+            <div class="details">Beach party & fireworks display</div>
+        </div>
+        <div class="timeline-item">
+            <div class="time">12:00 AM GMT-5</div>
+            <div class="event">NYC Times Square Ball Drop</div>
+            <div class="details">Iconic New Year's Eve celebration</div>
+        </div>
+        <div class="timeline-item">
+            <div class="time">12:00 AM GMT-7</div>
+            <div class="event">Denver Civic Center Celebration</div>
+            <div class="details">Mountain region fireworks</div>
+        </div>
+        <div class="timeline-item">
+            <div class="time">12:00 AM GMT-8</div>
+            <div class="event">Las Vegas Strip</div>
+            <div class="details">Synchronized casino fireworks</div>
+        </div>
+        <div class="timeline-item">
+            <div class="time">12:00 AM GMT-10</div>
+            <div class="event">Hawaii Waikiki Beach</div>
+            <div class="details">Pacific paradise celebration</div>
+        </div>
+    </div>
+</section>
+<!-- Rest of the HTML remains the same -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvas-confetti/1.6.0/confetti.browser.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
