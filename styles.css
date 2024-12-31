@@ -439,3 +439,17 @@ h2 {
         font-size: 2rem;
     }
 }
+
+
+@media screen and (max-width: 768px) {
+    .video-container {
+        padding-bottom: 75%; /* 4:3 Aspect Ratio for mobile */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .video-container {
+        padding-bottom: 100%; /* 1:1 Aspect Ratio for smaller devices */
+        margin: 0 -15px; /* Negative margin to make video full width */
+    }
+}
